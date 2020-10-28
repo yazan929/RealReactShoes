@@ -8,32 +8,32 @@ function App() {
 
   var shoesArray = [
     {
-      photo: "photos/men1.jpg",
+      photo: "photos/Men1.jpg",
       class: "Mshoes",
       name: "shoe1",
     },
     {
-      photo: "photos/men2.jpg",
+      photo: "photos/Men2.jpg",
       class: "Mshoes",
       name: "shoe2",
     },
     {
-      photo: "photos/men3.jpg",
+      photo: "photos/Men3.jpg",
       class: "Mshoes",
       name: "shoe3",
     },
     {
-      photo: "photos/men4.jpg",
+      photo: "photos/Men4.jpg",
       class: "Mshoes",
       name: "shoe4",
     },
     {
-      photo: "photos/men5.jpg",
+      photo: "photos/Men5.jpg",
       class: "Mshoes",
       name: "shoe5",
     },
     {
-      photo: "photos/men6.jpg",
+      photo: "photos/Men6.jpg",
       class: "Mshoes",
       name: "shoe6",
     },
