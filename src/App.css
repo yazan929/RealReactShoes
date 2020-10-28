@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #7db46cff;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  padding: 5px;
+}
+
+.navBar > div {
+  text-align: center;
+  flex-grow: 3;
+}
+
+.navBar a {
+  font-weight: bold;
+  font-weight: 900px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  display: block;
+  padding: 16px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navBar > div:hover {
+  background: rgb(84, 136, 68);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Shoes {
+  display: flex;
+  background-color: #7db46cff;
+}
+.Shoes > div > div {
+  text-align: center;
+  padding: 30px;
+  width: 300px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.MShoes {
+  order: 0;
+}
+
+.WShoes {
+  order: 1;
+}
+
+.KShoes {
+  order: 2;
+}
+
+.Shoes > .innerShoe > div > img {
+  opacity: 0.7;
+
+  width: 280px;
+  height: 200px;
+}
+
+.Shoes > .innerShoe > div > img:hover {
+  opacity: 1;
+}
+
+.innerShoe {
+  margin: 0 auto;
+  width: 1728px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(93, 141, 78);
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1px;
+}
+
+
+.break {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.break > img {
+  height: 100%;
+  width: 100%;
+}
+
+.iconsTable td:nth-child(odd) {
+  padding-right: 10px;
+  text-align: center;
 }
