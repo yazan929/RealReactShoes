@@ -106,7 +106,7 @@ function App() {
     <div className="App">
       <header>
         <div className="navBar">
-          <div><a href="#" onClick={() => { selectType("Men") }}>Men</a></div>
+          <div><a href="#">Men</a></div>
           <div><a href="#">Women</a></div>
           <div><a href="#">Kids</a></div>
           <div><a href="#">About Us</a></div>
