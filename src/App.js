@@ -4,6 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faEnvelope, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+// function Popup(name) {
+//   callTheName = () => {
+//     alert("the name is" + name);
+//   }
+
+//   render() {
+//     return (
+//       <button onClick={this.callTheName}>Take the shot!</button>
+//     );
+//   }
+// }
+
+
 function App() {
 
   var shoesArray = [
@@ -100,7 +113,7 @@ function App() {
 
   ]
 
-  
+
 
   return (
     <div className="App">
@@ -121,7 +134,7 @@ function App() {
           <div className="innerShoe">
             {shoesArray.map(shoe => {
               return <>
-                <div className={shoe.class}>
+                <div className={shoe.class} onClick={() => { alert("the name is " + (shoe.name)) }}>
                   <img src={shoe.photo} />
                 </div>
               </>;
@@ -177,3 +190,20 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+/*
+Todo next
+
+make the nav bar work
+
+
+
+
+
+
+
+*/
