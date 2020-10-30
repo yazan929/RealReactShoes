@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faEnvelope, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -31,7 +31,7 @@ class Footer extends React.Component {
               <tbody>
                 <tr>
                   <td><FontAwesomeIcon icon={faGithub} /></td>
-                  <td> <a href="https://github.com/yazan929">GitHub</a></td>
+                  <td> <a href='https://github.com/yazan929'>GitHub</a></td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faLinkedin} /></td>
