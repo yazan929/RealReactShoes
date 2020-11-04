@@ -163,10 +163,18 @@ class ShoeList extends React.Component {
                     >
                         <Fade in={this.state.isModalOpen}>
                             <div className={classes.paper}>
-                                <div class="modalSize">
+                                <div className="modalSize">
+                                    <div  className="modal-close" onClick={() => {
+                                        this.setState({
+                                            isModalOpen: false,
+                                            
+                                        });
+                                    }}>
+                                        <button  title="Close" >X </button></div>
+
                                     <h1 className="modalText">This is {this.shoesArray[this.state.currentShoeIndex].name}</h1>
-                                    <p class="modalImg"><img src={this.shoesArray[this.state.currentShoeIndex].photo}></img></p>
-                                    <div class="buttonDiv" >
+                                    <p className="modalImg"><img src={this.shoesArray[this.state.currentShoeIndex].photo}></img></p>
+                                    <div className="buttonDiv" >
                                         <button> Buy now!</button>
                                     </div>
                                 </div>
