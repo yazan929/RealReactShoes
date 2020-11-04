@@ -25,6 +25,7 @@
 
 .navBar > div:hover {
   background: rgb(84, 136, 68);
+  transform: translateY(4px);
 }
 
 .Shoes {
@@ -87,7 +88,6 @@
   flex-grow: 1px;
 }
 
-
 .break {
   display: flex;
   flex-wrap: wrap;
@@ -101,4 +101,56 @@
 .iconsTable td:nth-child(odd) {
   padding-right: 10px;
   text-align: center;
+}
+
+.modalText {
+  border: 3px solid #436414;
+  padding: 10px;
+  text-align: center;
+}
+
+.modalImg > img {
+  height: 70%;
+  width: 70%;
+}
+.modalImg {
+  text-align: center;
+}
+
+.buttonDiv {
+  text-align: center;
+}
+
+.buttonDiv > button {
+  background-color: white; /* Green */
+  border: "2px solid #000";
+  color: black;
+  padding: 15px 32px;
+  font-size: 20px;
+}
+.buttonDiv > button {
+  background-color: white; /* Green */
+  border: "2px solid #000";
+  color: black;
+  padding: 15px 32px;
+  font-size: 20px;
+}
+
+.buttonDiv > button:hover {
+  background-color: green;
+}
+
+.buttonDiv > button:active {
+  background-color: rgb(84, 136, 68);
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+.modalSize {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  max-height: 700px;
+
+  align-items: center;
+  flex-wrap: nowrap;
 }

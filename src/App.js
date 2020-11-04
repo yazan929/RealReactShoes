@@ -7,17 +7,19 @@ import ShoeList from './ShoeList';
 
 
 
+
 function App() {
 
-  return (
-    <div className="App">
-      <Header />
-      <body>
+  return (    
+      <div className="App">
+        <Header />
+
         <BreakPart />
+
         <ShoeList />
-      </body>
-      <Footer />
-    </div>
+
+        <Footer />
+      </div>    
   );
 }
 
