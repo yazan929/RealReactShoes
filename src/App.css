@@ -150,16 +150,21 @@
   flex-direction: column;
   max-width: 800px;
   max-height: 800px;
+  height: 100%;
+  width: 100%;
 
   align-items: center;
   flex-wrap: nowrap;
 }
 .modal-close{
-  display: flex;
-  flex-direction: row;
+  position: relative;
+
 }
 .modal-close >button{
-  justify-content: flex-end;
+  position: absolute;
+  left: 390px;
+  font-size: 18px;
+
 	background: white;
 	color: black;
 	line-height: 25px;
