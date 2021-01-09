@@ -16,8 +16,6 @@ function App() {
         
         <BreakPart />
         
-        <ShoeInfoComponent/>
-
         <ShoeList />
 
         <Footer />

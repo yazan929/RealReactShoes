@@ -7,9 +7,6 @@ import { withStyles } from "@material-ui/core/styles";
 import ShoeInfoComponent from "./ShoeInfoComponent";
 
 const useStyles = (theme) => ({
-
-
-    
     modal: {
         display: "flex",
         alignItems: "center",
@@ -24,17 +21,16 @@ const useStyles = (theme) => ({
 });
 
 class ShoeList extends React.Component {
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
 
-        this.state = {
-            isModalOpen: false,
-            currentShoeIndex: 0,
-        };
-    }
+    //     this.state = {
+    //     };
+
+    // }
 
     state = {
-        visible: true,
+        visible: false,
     };
 
     showModal = () => {
@@ -44,10 +40,6 @@ class ShoeList extends React.Component {
     hideModal = () => {
         this.setState({ visible: false });
     };
-
-
-
-
     shoesArray = [
         {
             photo: "photos/Men1.jpg",
@@ -145,7 +137,19 @@ class ShoeList extends React.Component {
         const { classes } = this.props;
 
         return (
-            <div className="Shoes">
+            <div>
+                {this.state.visible ? (
+                    <div className="Modal">
+                        <div className="InsideModal">
+                            <button aria-label="Close" onClick={this.hideModal}>
+                                X
+                            </button>
+                            <p>I'm A Pop Up!!!</p>
+                            <img src={shoe.photo} />
+                        </div>
+                    </div>
+                ) : null}
+                <div className="Shoes">
                 <div className="innerShoe">
                     {this.shoesArray.map((shoe, index) => {
                         return (
@@ -153,18 +157,17 @@ class ShoeList extends React.Component {
                                 key={index.toString()}
                                 className={shoe.class}
                                 onClick={() => {
+                                    this.showModal({
 
-                                    this.setState({
-                                        currentShoeIndex: index,
                                     });
                                 }}
                             >
                                 <img src={shoe.photo} />
-
                             </div>
                         );
                     })}
                 </div>
+            </div>
             </div>
         );
     }
