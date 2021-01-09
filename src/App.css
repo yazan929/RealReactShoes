@@ -8,7 +8,7 @@
   padding: 5px;
 }
 
-.navBar > div {
+.navBar>div {
   text-align: center;
   flex-grow: 3;
 }
@@ -23,7 +23,7 @@
   color: white;
 }
 
-.navBar > div:hover {
+.navBar>div:hover {
   background: rgb(84, 136, 68);
   transform: translateY(4px);
 }
@@ -32,7 +32,8 @@
   display: flex;
   background-color: #7db46cff;
 }
-.Shoes > div > div {
+
+.Shoes>div>div {
   text-align: center;
   padding: 30px;
   width: 300px;
@@ -52,14 +53,14 @@
   order: 2;
 }
 
-.Shoes > .innerShoe > div > img {
+.Shoes>.innerShoe>div>img {
   opacity: 0.7;
 
   width: 280px;
   height: 200px;
 }
 
-.Shoes > .innerShoe > div > img:hover {
+.Shoes>.innerShoe>div>img:hover {
   opacity: 1;
 }
 
@@ -93,7 +94,7 @@
   flex-wrap: wrap;
 }
 
-.break > img {
+.break>img {
   height: 100%;
   width: 100%;
 }
@@ -109,10 +110,11 @@
   text-align: center;
 }
 
-.modalImg > img {
+.modalImg>img {
   height: 70%;
   width: 70%;
 }
+
 .modalImg {
   text-align: center;
 }
@@ -121,65 +123,67 @@
   text-align: center;
 }
 
-.buttonDiv > button {
-  background-color: white; /* Green */
-  border: "2px solid #000";
-  color: black;
-  padding: 15px 32px;
-  font-size: 20px;
-}
-.buttonDiv > button {
-  background-color: white; /* Green */
+.buttonDiv>button {
+  background-color: white;
+  /* Green */
   border: "2px solid #000";
   color: black;
   padding: 15px 32px;
   font-size: 20px;
 }
 
-.buttonDiv > button:hover {
+.buttonDiv>button {
+  background-color: white;
+  /* Green */
+  border: "2px solid #000";
+  color: black;
+  padding: 15px 32px;
+  font-size: 20px;
+}
+
+.buttonDiv>button:hover {
   background-color: green;
 }
 
-.buttonDiv > button:active {
+.buttonDiv>button:active {
   background-color: rgb(84, 136, 68);
   box-shadow: 0 5px #666;
   transform: translateY(2px);
 }
-.modalSize {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  max-height: 800px;
-  height: 100%;
-  width: 100%;
 
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.modal-close{
-  position: relative;
-
-}
-.modal-close >button{
-  position: absolute;
-  left: 390px;
-  font-size: 18px;
-
-	background: white;
-	color: black;
-	line-height: 25px;
-
-	text-align: center;
-
-	text-decoration: none;
-  font-weight: bold;
-  border-radius: 20px;
+.Modal {
+  background-color: rgb(84, 136, 68);
   
-
-
-
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+  position: fixed;
+  width: 60%; /* Full width */
+  height: 90%; /* Full height */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
-.modal-close >button:hover {
-  background-color: green;
+
+.InsideModal {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.InsideModal > img{
+
+  height: 60%;
+  width: 60%;
+
+}
+.ModalButton{
+
+  padding: 20px;
+  border: 1px solid #888;
 }
