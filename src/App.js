@@ -3,7 +3,6 @@ import Footer from './Footer';
 import Header from './Header';
 import BreakPart from './Break';
 import ShoeList from './ShoeList';
-import ShoeInfoComponent from './ShoeInfoComponent';
 
 
 
@@ -15,7 +14,7 @@ function App() {
         <Header />
         
         <BreakPart />
-        
+
         <ShoeList />
 
         <Footer />
