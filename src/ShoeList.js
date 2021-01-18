@@ -120,6 +120,7 @@ class ShoeList extends React.Component {
         return (
             <div>
                 <div>
+                <div>
                     {this.state.visible ? (
                         <div className="Modal">
                             <div className="InsideModal">
@@ -136,7 +137,7 @@ class ShoeList extends React.Component {
                         </div>
                     ) : null}
                 </div>
-
+                </div>
                 <div className="Shoes">
                     <div className="innerShoe">
                         {/* VISIBLE */}

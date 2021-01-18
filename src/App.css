@@ -29,6 +29,8 @@
 }
 
 .Shoes {
+  z-index: -1;
+
   display: flex;
   background-color: #7db46cff;
 }
@@ -174,16 +176,21 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  z-index: 1;
+
 }
 
 .InsideModal > img{
 
   height: 60%;
   width: 60%;
+  z-index: 1;
 
 }
 .ModalButton{
 
   padding: 20px;
   border: 1px solid #888;
+  z-index: 1;
+
 }
