@@ -17,7 +17,7 @@ class ShoeInfoComponent extends React.Component {
     render() {
         return (
             <div>
-                <div>
+                
                 {this.state.visible ? (
                     <div className="Modal">
                         <div className="InsideModal">
