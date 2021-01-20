@@ -5,7 +5,7 @@ import ShoeInfoComponent from "./ShoeInfoComponent";
 class ShoeList extends React.Component {
     constructor(props) {
         super(props);
-        this.showModal = this.showModal.bind(this);
+        // this.showModal = this.showModal.bind(this);
         this.hideModal = this.hideModal.bind(this);
     }
 
@@ -147,7 +147,7 @@ class ShoeList extends React.Component {
                                     key={index.toString()}
                                     className={shoe.class}
                                     onClick={() => {
-                                        {this.showModal(this);
+                                        {this.showModal();
                                             this.setState({ currentShoeIndex: index });
                                         }
 
