@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faEnvelope, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import '../CSS/App.css'
+import '../App.css'
 
 class Footer extends React.Component {
   render() {

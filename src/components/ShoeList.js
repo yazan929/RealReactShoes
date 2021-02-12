@@ -1,8 +1,8 @@
 import React from "react";
-import './App.css'
+import '../App.css'
 
 import { connect } from "react-redux";
-import { selectShoe } from "./actions/index";
+import { selectShoe } from "../actions/index";
 import { bindActionCreators } from "redux";
 
 class ShoeList extends React.Component {

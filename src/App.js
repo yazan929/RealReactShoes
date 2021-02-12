@@ -1,7 +1,7 @@
-import Footer from "./Footer";
-import Header from "./Header";
-import BreakPart from "./Break";
-import ShoeList from "./ShoeList";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import BreakPart from "./components/Break";
+import ShoeList from "./components/ShoeList";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import allReducers from "./reducers/index";
