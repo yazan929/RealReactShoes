@@ -1,5 +1,5 @@
-exports.shoes = (req, res) => {
-    res.json({ 
-        "size": ["men","women"],
-    });
-};
+// exports.shoes = (req, res) => {
+//     res.json({ 
+//         "size": ["men","women"],
+//     });
+// };
