@@ -13,11 +13,11 @@ export const Shoes = () => {
             })
             
         .then((jsonResponse) => setInitialState(jsonResponse.shoes))
-        // .then((jsonResponse) => console.log(jsonResponse));
+      //  // .then((jsonResponse) => console.log(jsonResponse));
     }, []);
     console.log(initialState);
 
-    // return (<div>{insialState.length>0 && insialState.map((e,i) => <li key={i}>{e}</li>)}</div>);
+    // // return (<div>{insialState.length>0 && insialState.map((e,i) => <li key={i}>{e}</li>)}</div>);
 
     return (
         <div>
@@ -27,7 +27,6 @@ export const Shoes = () => {
                 {initialState.length > 0 &&
                     initialState.map((e) => <li>{e}</li>)}
             </div>
-            {/* <div>{initialState.length}</div> */}
         </div>
     );
 };
