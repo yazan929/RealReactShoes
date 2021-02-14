@@ -9,8 +9,8 @@ exports.shoes = (req, res) => {
     res.json({
         shoes: [
             "photos/Men1.jpg",
-            " photos/Men2.jpg",
-            " photos/Men3.jpg",
+            "photos/Men2.jpg",
+            "photos/Men3.jpg",
             "photos/Men4.jpg",
             "photos/Men5.jpg",
             "photos/Men6.jpg",

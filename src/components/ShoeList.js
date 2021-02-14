@@ -1,9 +1,31 @@
 import React from "react";
 import '../App.css'
-
+import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { selectShoe } from "../actions/index";
 import { bindActionCreators } from "redux";
+
+
+
+
+
+
+// export const Shoes = () => {
+    
+//     // // return (<div>{insialState.length>0 && insialState.map((e,i) => <li key={i}>{e}</li>)}</div>);
+
+//     return (
+//         <div>
+//             {/* <div>{initialState}</div> */}
+//             {/* <div>
+//                 {" "}
+//                 {initialState.length > 0 &&
+//                     initialState.map((e) => <li>{e}</li>)}
+//             </div> */}
+//         </div>
+//     );
+// };
+
 
 class ShoeList extends React.Component {
     constructor(props) {
@@ -13,6 +35,8 @@ class ShoeList extends React.Component {
         this.state = { title: "Show More Information" };
     }
 
+
+    
     state = {
         visible: false,
         currentShoeIndex: 0,
@@ -30,6 +54,10 @@ class ShoeList extends React.Component {
         // this.state = { title: "Show More Information" };
         // this.setState = { title: "Show More Information" };
     };
+
+
+    
+
 
     render() {
         return (
