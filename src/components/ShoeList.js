@@ -5,11 +5,6 @@ import { connect } from "react-redux";
 import { selectShoe } from "../actions/index";
 import { bindActionCreators } from "redux";
 
-
-
-
-
-
 // export const Shoes = () => {
     
 //     // // return (<div>{insialState.length>0 && insialState.map((e,i) => <li key={i}>{e}</li>)}</div>);
