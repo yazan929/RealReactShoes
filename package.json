@@ -2,7 +2,7 @@
     "name": "shoe-store",
     "version": "0.1.0",
     "private": true,
-    
+
     "dependencies": {
       "npm-run-all": "^4.1.2"
     },
@@ -15,5 +15,5 @@
       "install:dev": "npm i && cd client && npm i && cd ../server && npm i",
       "postinstall": "cd server && npm i"
     },
-    "license": "MIT"
+    "license": "ISC"
   }
