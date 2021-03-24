@@ -3,7 +3,7 @@
 
 // // there is a new file called shoe-info that stores the reducer for the shoe info
 // /*
-
+//lol
 // const reducer = () => {
 //     return {
 //         shoesArray: [
