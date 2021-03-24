@@ -1,7 +1,9 @@
 const express = require('express');
 app = express()
-
+const connectDB = require('./config/db') 
 require('dotenv').config()
+
+connectDB();
 
 app.set('view engine', 'ejs')
 // app.use('/', require('/routes/shoes'))
