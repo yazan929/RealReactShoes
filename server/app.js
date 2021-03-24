@@ -1,9 +1,12 @@
-const express = require('express');
-app = express()
-const connectDB = require('./config/db') 
-require('dotenv').config()
+require("dotenv").config();
+
+const express = require("express");
+
+const connectDB = require("./config/db");
 
 connectDB();
+
+const app = express();
 
 app.set('view engine', 'ejs')
 // app.use('/', require('/routes/shoes'))
@@ -20,5 +23,3 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, ()=> {
     console.log('listen on port:', PORT )
 })
-
-// app.listen(PORT , console.log('server started on port ',PORT));
