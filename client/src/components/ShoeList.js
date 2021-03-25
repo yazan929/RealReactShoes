@@ -2,24 +2,10 @@ import React from "react";
 import '../App.css'
 import { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import { selectShoe } from "../actions/index";
+import { selectShoe } from "../redux/actions/index";
 import { bindActionCreators } from "redux";
 
-// export const Shoes = () => {
-    
-//     // // return (<div>{insialState.length>0 && insialState.map((e,i) => <li key={i}>{e}</li>)}</div>);
 
-//     return (
-//         <div>
-//             {/* <div>{initialState}</div> */}
-//             {/* <div>
-//                 {" "}
-//                 {initialState.length > 0 &&
-//                     initialState.map((e) => <li>{e}</li>)}
-//             </div> */}
-//         </div>
-//     );
-// };
 
 
 class ShoeList extends React.Component {

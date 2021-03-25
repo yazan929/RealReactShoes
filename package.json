@@ -8,7 +8,7 @@
     "server": "nodemon server/app.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import":"node server/seederScript.js"
+    "data:import": "node server/seederScript.js"
   },
   "author": "yazanq95",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.12.2",
     "nodemon": "^2.0.7",
+    "redux-thunk": "^2.3.0",
     "save": "^2.4.0"
   }
 }
