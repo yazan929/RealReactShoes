@@ -13,12 +13,11 @@ function App() {
         <Provider store={store}>
             <div className="App">
 
-
                 <Header />
 
                 <BreakPart />
 
-                {/* <ShoeList /> */}
+                <ShoeList />
 
                 <Footer />
             </div>
