@@ -13,7 +13,7 @@ class Footer extends React.Component {
             <tbody>
               <tr>
                 <td><FontAwesomeIcon icon={faMobile} /></td>
-                <td>0108904693</td>
+                <td>+60 108904693</td>
               </tr>
               <tr>
                 <td><FontAwesomeIcon icon={faEnvelope} /></td>
