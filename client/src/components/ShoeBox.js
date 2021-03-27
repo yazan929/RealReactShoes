@@ -1,19 +1,16 @@
 import "./ShoeBox.css";
-import { Link } from "react-router-dom";
 
-
-const ShoeBox = () => {
+const ShoeBox = ({ photo, msg, name ,productId }) => {
   return (
-    <div className="ShoeBox">
-        <div className= "xd">
+      <div className="product">
+          <img src={photo} alt={name} />
 
-            <div ></div>
+          <div className="product__info">
+              <p className="info__name">{name}</p>
 
-        <Link to={`/product/${productId}`} className="info__button">
-          View
-        </Link>
+              <p className="info__description">{msg.substring(0, 100)}...</p>
+          </div>
       </div>
-    </div>
   );
 };
 
