@@ -1,5 +1,7 @@
+// working on this new shoeList
+
 import React,{useEffect} from "react";
-import "../App.css";
+// import "../App.css";
 import POSTS from './posts/posts';
 import {useDispatch} from 'react-redux';
 import {getPosts} from '../actions/posts';
@@ -12,14 +14,13 @@ const ShoeList= ()=> {
         dispatch(getPosts());
   }, [dispatch]);
 
-
   return(
-    <div>
+    <div >
       <POSTS />
     </div>
+
   );
 
 }
-
 
 export default ShoeList;

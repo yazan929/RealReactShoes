@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Post from "./post/post";
 import { useSelector } from "react-redux";
 import { fetchPosts } from "../../api/index";
+import "./posts.css"
 
 const Posts = () => {
     //const posts = useSelector((state) => state.posts);
@@ -19,7 +20,7 @@ const Posts = () => {
     return posts.length === 0 || !posts ? (
         <div>empty</div>
     ) : (
-        <div className="Shoes">
+        <div className="newShoes">
             {posts.map((post) => (
                 <div key={post.id}>
                     <Post post={post} />
