@@ -127,13 +127,6 @@ const shoes = [
         msg: "This shoe has a unique color ",
         showMore: false,
     },
-    {
-        photo: "photos/Kids7.jpg",
-        class: "KShoes",
-        name: "shoe19",
-        msg: "This is is the real bla bla ",
-        showMore: false,
-    },
 ];
 
 export const getPosts = async (req, res) => {

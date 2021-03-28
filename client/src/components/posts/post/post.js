@@ -3,8 +3,11 @@ import "./post.css"
 const Post = ({ post }) => {
     return (
         <div className="insideNewShoes">
-            <img scr={post.im} />
-            <div>{post.name}</div>
+
+
+            {/* <div>{post.name}</div> */}
+            <img src={post.photo} />
+
         </div>
     );
 };
