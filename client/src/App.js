@@ -5,6 +5,7 @@ import ShoeList from "./components/ShoeList";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import store from './redux/store';
+import ShoeBox from "./backup/ShoeBox";
 // import allReducers from "./reducers/index";
 // const store = createStore(allReducers);
 
@@ -16,6 +17,8 @@ function App() {
                 <Header />
 
                 <BreakPart />
+
+
 
                 <ShoeList />
 

@@ -4,8 +4,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 // Components
-import ShoeBox from "../components/ShoeBox";
-
+import product from "./product"
 //Actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
@@ -29,7 +28,7 @@ const ShoeList = () => {
           <h2>{error}</h2>
         ) : (
           products.map((product) => (
-            <ShoeBox
+            <product
               key={product._id}
               name={product.name}
               description={product.msg}

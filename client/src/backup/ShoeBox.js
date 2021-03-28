@@ -1,4 +1,4 @@
-import "./ShoeBox.css";
+
 
 const ShoeBox = ({ photo, msg, name ,productId }) => {
   return (
@@ -7,8 +7,8 @@ const ShoeBox = ({ photo, msg, name ,productId }) => {
 
           <div className="product__info">
               <p className="info__name">{name}</p>
-
-              <p className="info__description">{msg.substring(0, 100)}...</p>
+                
+              {/* <p className="info__description">{msg.substring(0, 100)}...</p> */}
           </div>
       </div>
   );
