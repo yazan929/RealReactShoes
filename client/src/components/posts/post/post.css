@@ -1,118 +1,68 @@
-.insideNewShoes{
+.insideNewShoes {
     width: 400px;
-  height: 300px; 
-  margin: auto;
+    height: 300px;
+    margin: auto;
 }
 
 
 
-.insideNewShoes >img{
-    /* opacity: 0.7; */
+.insideNewShoes>img {
+    opacity: 0.9;
     width: 280px;
     height: 200px;
 }
 
-.theModal{
-    /* background-color: rgb(84, 136, 68); */
-    
-    /* display: flex;
-    flex-direction:column;
+
+.insideNewShoes>img:hover {
+    opacity: 1;
+
+}
+.theModal {
+
+    display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    width: 60%; 
-    height: 90%; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3; */
+    flex-direction: column;
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+.theModal>button {
+    position: absolute;
+    bottom: 2%;
+    size: 40%;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
 }
 
 
+.theModal>button:hover {
+    /* background-color: #4CAF50; Green */
+    color: white;
+  }
 
-.modalText {
-    border: 3px solid #436414;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .modalImg>img {
-    height: 70%;
-    width: 70%;
-  }
-  
-  .modalImg {
-    text-align: center;
-  }
-  
-  .buttonDiv {
-    text-align: center;
-  }
-  
-  .buttonDiv>button {
-    background-color: white;
-    /* Green */
-    border: "2px solid #000";
-    color: black;
-    padding: 15px 32px;
+
+
+.Title{
+    font-size: 40px;
+
+}
+
+
+.description{
     font-size: 20px;
-  }
-  
-  .buttonDiv>button {
-    background-color: white;
-    /* Green */
-    border: "2px solid #000";
-    color: black;
-    padding: 15px 32px;
-    font-size: 20px;
-  }
-  
-  .buttonDiv>button:hover {
-    background-color: green;
-  }
-  
-  .buttonDiv>button:active {
-    background-color: rgb(84, 136, 68);
-    box-shadow: 0 5px #666;
-    transform: translateY(2px);
-  }
-  
-  .Modal {
-    background-color: rgb(84, 136, 68);
-    
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    /* display: none; */
-    position: fixed;
-    width: 60%; 
-    height: 90%; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-  
-  }
-  
-  .InsideModal {
-    background-color: white;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-  
-  }
-  
-  .InsideModal > img{
-  
-    height: 60%;
-    width: 60%;
-  
-  }
-  .ModalButton{
-  
-    padding: 20px;
-    border: 1px solid #888;
-  
-  }
+
+}
+
+
+.theModal>img {
+
+    height: 30%;
+    width: 30%;
+}
