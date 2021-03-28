@@ -15,10 +15,10 @@ export const getPosts = async (req,res) =>{
 }
 
 
-// TODO later
-export const createPost = (req, res) => {
+// // TODO later
+// export const createPost = (req, res) => {
 
-    res.send('Post creation!');
+//     res.send('Post creation!');
 
-}
+// }
 
