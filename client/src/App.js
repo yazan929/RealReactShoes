@@ -17,7 +17,7 @@ function App() {
                 <Header />
 
                 <BreakPart />
-                
+
                 <ShoeList />
 
                 <Footer />

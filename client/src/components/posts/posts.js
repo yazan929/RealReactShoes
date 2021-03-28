@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Post from "./post/post";
-import { useSelector } from "react-redux";
 import { fetchPosts } from "../../api/index";
 import "./posts.css"
 
