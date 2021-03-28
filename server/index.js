@@ -6,10 +6,10 @@ import postRoutes from './routes/posts.js'
 
 const app = express();
 
-app.use('/posts',postRoutes)
+
 
 app.use(cors());
-
+app.use('/posts',postRoutes)
 const CONNECTION_URL = 'mongodb+srv://yazeenq:redolazybanana2022@react-shoes.zhyjp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 const PORT = process.env.PORT || 5000;

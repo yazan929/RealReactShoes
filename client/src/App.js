@@ -2,12 +2,13 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BreakPart from "./components/Break";
 import ShoeList from "./components/ShoeList";
-import { createStore } from "redux";
 import { Provider } from "react-redux";
-import store from "./redux/store";
-import ShoeBox from "./backup/ShoeBox";
-// import allReducers from "./reducers/index";
-// const store = createStore(allReducers);
+import {createStore , applyMiddleware , compose} from 'redux';
+import thunk from 'redux-thunk';
+
+import reducers from './reducers';
+
+const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 function App() {
     return (
