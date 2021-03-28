@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./post.css"
 const Post = ({ post }) => {
     return (
-        <div className="innerShoe" >
-            <img scr={post.selectedFile} />
+        <div className="insideNewShoes">
+            <img scr={post.im} />
             <div>{post.name}</div>
         </div>
     );
