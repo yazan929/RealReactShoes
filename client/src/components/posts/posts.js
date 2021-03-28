@@ -1,27 +1,32 @@
-import React from 'react';
-import Post from './post/post';
-import {useSelector} from 'react-redux';
+import React, { useEffect, useState } from "react";
+import Post from "./post/post";
+import { useSelector } from "react-redux";
+import { fetchPosts } from "../../api/index";
 
-const Posts= ()=> {
+const Posts = () => {
+    //const posts = useSelector((state) => state.posts);
+    let [posts, setPosts] = useState([]);
 
-    const posts = useSelector((state) => state.posts);
+    // console.log(posts);
 
-    console.log(posts);
+    useEffect(async () => {
+        var fetchedPosts = await fetchPosts();
+        setPosts(fetchedPosts.data);
 
-    return(
-        !posts.length ? <div>empty</div> :(
-            <div>
-                {posts.map((post) => (
-                    <div key={post.id}>
-                            <Post post={post}/>
-                    </div>
-                )
-                )}
-                
-            </div>
-        )
+
+    }, []);
+
+    return posts.length === 0 || !posts ? (
+        <div>empty</div>
+    ) : (
+        <div className="Shoes">
+            {posts.map((post) => (
+                <div key={post.id}>
+                    <Post post={post} />
+                </div>
+            ))}
+        </div>
     );
-
-}
+};
 
 export default Posts;
