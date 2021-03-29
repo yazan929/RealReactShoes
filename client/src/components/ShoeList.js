@@ -1,26 +1,23 @@
 // working on this new shoeList
 
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 // import "../App.css";
-import POSTS from './posts/posts';
-import {useDispatch} from 'react-redux';
-import {getPosts} from '../actions/posts';
+import POSTS from "./posts/posts";
+import { useDispatch } from "react-redux";
+import { getPosts } from "../actions/posts";
 
-const ShoeList= ()=> {
+const ShoeList = () => {
+    const dispatch = useDispatch();
 
-  const dispatch = useDispatch();
-
-  useEffect(() => {
+    useEffect(() => {
         dispatch(getPosts());
-  }, [dispatch]);
+    }, [dispatch]);
 
-  return(
-    <div >
-      <POSTS />
-    </div>
-
-  );
-
-}
+    return (
+        <div>
+            <POSTS />
+        </div>
+    );
+};
 
 export default ShoeList;
