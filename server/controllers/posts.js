@@ -127,6 +127,7 @@ const shoes = [
         msg: "This shoe has a unique color ",
         showMore: false,
     },
+
 ];
 
 export const getPosts = async (req, res) => {
