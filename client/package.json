@@ -1,4 +1,8 @@
-{
+{ "devServer": {
+  "disableHostCheck": true,
+  "host": "0.0.0.0",
+  "port": 3000
+},
   "name": "shoe-store",
   "version": "0.1.0",
   "private": true,
