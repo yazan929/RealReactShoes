@@ -22,7 +22,7 @@ public class ShoeController {
 	 @Autowired
 	    private ShoeRepository userRepository;
 
-	    @GetMapping("users")
+	    @GetMapping("shoes")
 	    public List < Shoe > getUsers() {
 	        return this.userRepository.findAll();
 	    }
