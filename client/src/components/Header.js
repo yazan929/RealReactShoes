@@ -8,10 +8,10 @@ class Header extends React.Component {
         <header>
             <div className="App">
           <div className="navBar">
-            <div><a href="#">Bar1</a></div>
-            <div><a href="#">Bar2</a></div>
-            <div><a href="#">Bar3</a></div>
+            <div><a href="#"> Buy Shoes</a></div>
             <div><a href="#">About Us</a></div>
+            <div><a href="#">Write A Review</a></div>
+            <div><a href="#">Add Shoes</a></div>
           </div>
           </div>
         </header>
