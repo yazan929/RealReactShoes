@@ -23,6 +23,7 @@ const Post = ({ post }) => {
         <div>
             <div className="insideNewShoes">
                 <img src={post.photo} onClick={toggleModal}></img>
+                <div className="textUnder">{post.name.substring(0, 1).toUpperCase()+post.name.substring(1)}</div>
             </div>
 
             <Modal

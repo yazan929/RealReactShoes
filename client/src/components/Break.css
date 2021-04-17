@@ -1,0 +1,40 @@
+
+.break {
+     display: flex;
+
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 5%;
+    background-image: url("http://localhost:3000/photos/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    /* background-attachment: fixed; */
+  }
+
+  .leftside{
+    display: flex;
+    flex-direction:  column;
+  }
+
+  .welcome{
+    font-size: 500%;
+    font-weight: 400;
+    color:#4E7044;
+  }
+
+.leftside>a{
+    font-size: 100%;
+
+}
+.shoeshop{
+    font-size: 400%;
+    color: white;
+    font-weight: 500;
+
+}
+  .break>img{
+      width: 50%;
+  }
+
+  

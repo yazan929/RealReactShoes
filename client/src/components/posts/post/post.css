@@ -2,16 +2,22 @@
     width: 400px;
     height: 300px;
     margin: auto;
-}
+    align-items: center;
 
+}
 
 
 .insideNewShoes>img {
     opacity: 0.9;
     width: 280px;
     height: 200px;
-}
+    border: 3px solid #4E7044;
 
+}
+.textUnder{
+color: white;
+font-weight: 500;
+}
 
 .insideNewShoes>img:hover {
     opacity: 1;
@@ -23,8 +29,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* height: 100%; */
-    /* width: 100%; */
+
 }
 
 .theModal>button {

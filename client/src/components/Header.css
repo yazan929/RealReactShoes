@@ -1,0 +1,53 @@
+
+
+.yazan929>a{
+    transition: all 0.3s ease 0s;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+    display: block;
+    padding: 16px;
+    color: white;
+}
+.yazan929>a:hover{
+    color :#4E7044;
+
+    font-size: 32px;
+    letter-spacing: 3px;
+  
+}
+
+li,a{
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    background-color: #7db46c;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.navv{
+    list-style: none;
+
+}
+
+.navv li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navv li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navv li a:hover{
+    color :#4E7044;
+}
+
