@@ -1,40 +1,42 @@
-
 .break {
-     display: flex;
+    display: flex;
 
-     justify-content: space-between;
-     align-items: center;
-     padding: 20px 5%;
-    background-image: url("http://localhost:3000/photos/banner.png");
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    /* background-image: url("http://localhost:3000/photos/banner.png"); */
+    background-image: url("http://ec2-54-179-117-71.ap-southeast-1.compute.amazonaws.com:3000/photos/banner.png");
+
+    
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
     /* background-attachment: fixed; */
-  }
+}
 
-  .leftside{
+.leftside {
     display: flex;
-    flex-direction:  column;
-  }
+    flex-direction: column;
+}
 
-  .welcome{
+.welcome {
     font-size: 500%;
     font-weight: 400;
-    color:#4E7044;
-  }
+    color: #4E7044;
+}
 
-.leftside>a{
+.leftside>a {
     font-size: 100%;
 
 }
-.shoeshop{
+
+.shoeshop {
     font-size: 400%;
     color: white;
     font-weight: 500;
 
 }
-  .break>img{
-      width: 50%;
-  }
 
-  
+.break>img {
+    width: 50%;
+}
