@@ -1,26 +1,27 @@
 .insideNewShoes {
-    width: 400px;
+    width: 20vw;
     height: 300px;
-    margin: auto;
+    margin: auto;    
     align-items: center;
-
+    width: 50%;
 }
 
 
 .insideNewShoes>img {
     opacity: 0.9;
-    width: 280px;
-    height: 200px;
-    border: 3px solid #4E7044;
+    width: 290px;
+    height: 290px;
+    border: 2px solid #4E7044;
 
 }
 .textUnder{
-color: white;
+color: #7db46cff;;
 font-weight: 500;
 }
 
 .insideNewShoes>img:hover {
     opacity: 1;
+    cursor: pointer;
 
 }
 .theModal {

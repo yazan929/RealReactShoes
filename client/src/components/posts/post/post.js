@@ -21,11 +21,6 @@ const Post = ({ post }) => {
 
     return (
         <div>
-            <div className="insideNewShoes">
-                <img src={post.photo} onClick={toggleModal}></img>
-                <div className="textUnder">{post.name.substring(0, 1).toUpperCase()+post.name.substring(1)}</div>
-            </div>
-
             <Modal
                 style={customStyles}
                 isOpen={isOpen}
@@ -40,7 +35,14 @@ const Post = ({ post }) => {
                     <button onClick={toggleModal}>Close</button>
                 </div>
             </Modal>
+            <div className="insideNewShoes">
+                <img src={post.photo} onClick={toggleModal}></img>
+                <div className="textUnder">{post.name.substring(0, 1).toUpperCase()+post.name.substring(1)}</div>
+            </div>
+
+            
         </div>
+        
     );
 };
 
