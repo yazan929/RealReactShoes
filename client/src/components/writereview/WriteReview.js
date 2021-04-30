@@ -1,31 +1,49 @@
 import React from "react";
 import "./WriteReview.css";
+import SelectShoe from "./selectShoe/SelectShoe.js"
+
 
 function writeReview() {
     return (
-        <div>
-            <div>Write a review here</div>
-
-            <div>
-                <div>Name</div>
-
-                <input></input>
+        <div className="All">
+            <div className="TopText">
+                Hello, Thank you for helping us by writing a review
             </div>
+            <div className="Form">
+                <div className="Border">
+                    <div className="InsideForm">
+                        <div>
+                            <div className="Element">Name</div>
 
-            <div>
-                <div>Email</div>
+                            <input type="text" className="Input"></input>
+                        </div>
 
-                <input></input>
-            </div>
+                        <div>
+                            <div className="Element">Email</div>
 
-            <div>
-                <div>Review</div>
+                            <input type="text" className="Input"></input>
+                        </div>
+                        <div className="Element">Select Shoe</div>
+                        <div>
+                            <SelectShoe />
+                            
+                        </div>
 
-                <input></input>
-            </div>
+                        <div>
+                            <div className="Element">Review</div>
 
-            <div>
-                <button Name="Submit"></button>
+                            <textarea
+                                cols="40"
+                                rows="5"
+                                type="text"
+                                className="Review"
+                            ></textarea>
+                        </div>
+                        <div>
+                            <button className="Submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,92 @@
+.All{
+    min-height: 800px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 21px;
+
+}
+
+.Border{
+    border: 3px solid #7db46cff;
+
+}
+
+.InsideForm{
+
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+}
+
+.Input{
+    width: 89%;
+    padding: 2px 2px;
+    margin: 8px 0;
+    font-size: 20px;
+    
+}
+
+
+.Review{
+    width: 91%;
+    height: 150px;
+    /* padding: 12px 20px; */
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    /* border-radius: 4px; */
+    background-color: #f8f8f8;
+    /* background-color: rgb(188, 245, 171); */
+    resize: none;
+    font-size: 20px;
+
+}
+
+
+
+/* .Element{
+    padding-left: 3px;
+
+} */
+
+.TopText {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    padding-left: 50px;
+}
+.TopText{
+    color: #7db46cff;
+    font-style: italic;
+
+}
+
+.Submit{
+    background-color: #7db46cff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.Submit:hover{
+    background-color: rgb(109, 161, 92);
+
+
+}
+
+#test{
+    width: 91%;
+    max-height: 60px;
+    overflow-y: scroll;
+}

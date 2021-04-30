@@ -13,7 +13,7 @@ const ShoeList = () => {
     }, [dispatch]);
 
     return (
-        <div>
+        <div className="MainDiv">
             <POSTS />
         </div>
     );

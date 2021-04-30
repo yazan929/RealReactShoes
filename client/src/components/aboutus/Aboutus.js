@@ -8,9 +8,9 @@ function aboutus() {
                 <div className="Title">About Us</div>
                 <div className="Text">
                     This WebApp was created by Yazan Qawasmeh to practice full
-                    stack development creating This , During this project i have
-                    practiced HTML, CSS, Javascript, React, NodeJS,Express,
-                    MongoDB and Java Springboot
+                    stack development, During the creation of this project I have
+                    practiced HTML, CSS, Javascript, React, Redux, NodeJS, Express,
+                    MongoDB and Java Springboot.
                 </div>
                 <div class="space"></div>
                 <div className="Title">Other Projects</div>

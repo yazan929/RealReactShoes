@@ -162,3 +162,7 @@
   border: 1px solid #888;
 
 }
+
+.MainDiv{
+  min-height: 1200px;
+}

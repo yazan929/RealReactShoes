@@ -6,7 +6,7 @@ import "./posts.css"
 const Posts = () => {
     //const posts = useSelector((state) => state.posts);
     let [posts, setPosts] = useState([]);
-
+    let ctr = 1;
     // console.log(posts);
 
     useEffect(async () => {
@@ -17,13 +17,25 @@ const Posts = () => {
     }, []);
 
     return posts.length === 0 || !posts ? (
-        <div>empty</div>
+
+        <div>No Shoes Found </div>
     ) : (
         <div className="newShoes">
             {posts.map((post) => (
-                <div key={post.id}>
-                    <Post post={post} />
+    
+                <div key={post.id,ctr++}>
+                    
+                     <Post post={post} />
+
+                    {/* {ctr%3===0 && <div className="MakeSpace"></div>} */}
+
                 </div>
+
+
+
+       
+
+
             ))}
         </div>
     );
