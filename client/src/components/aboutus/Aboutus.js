@@ -1,7 +1,17 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import "./Aboutus.css";
+import {fetchReviews} from "../../api/index";
 
-function aboutus() {
+
+
+
+function Aboutus() {
+    let [reviews,setReviews] = useState([]);
+    useEffect(async()=>{
+        var fetchedReviews = await fetchReviews();
+        setReviews(fetchedReviews.data);
+    },[]);
+    //
     return (
         <div className="AboutUs">
             <div className="Page">
@@ -11,13 +21,26 @@ function aboutus() {
                     stack development, During the creation of this project I have
                     practiced HTML, CSS, Javascript, React, Redux, NodeJS, Express,
                     MongoDB and Java Springboot.
+                    {/* {console.log(reviews.length)} */}
                 </div>
                 <div class="space"></div>
                 <div className="Title">Other Projects</div>
                 
             </div>
+            <div className="ListOfReviews">
+
+            <div className="Title">Here are some of the reviews that we got!!!</div>
+
+
+
+              {reviews.map((div) => (
+                <div className="Text" >{div.text}</div>
+              ))}
+
+
+            </div>
         </div>
     );
 }
 
-export default aboutus;
+export default Aboutus;

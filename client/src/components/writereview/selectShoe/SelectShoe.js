@@ -18,8 +18,9 @@ import { fetchPosts } from "../../../api/index";
         ) : (
 <div className="select-container">
             <select className="Input" id="test" >
+
               {shoes.map((option) => (
-                <option value={option.name}>{option.name}</option>
+                <option className="Option" value={option.name}>{option.name}</option>
               ))}
             </select>
           </div>

@@ -1,9 +1,10 @@
 .insideNewShoes {
-    width: 100vw;
+
     height: 300px;
-    margin: auto;    
-    align-items: center;
-    width: 50%;
+    margin-left: 100px;    
+    margin-right: 100px;    
+    /* align-items: center; */
+    /* width: 50%; */
 }
 
 

@@ -4,9 +4,9 @@ import "./Break.css";
 class Break extends React.Component {
     render() {
         return (
-            <div>
-            <div>
-                <div>
+            <div >
+            <div className="FullBreak">
+                {/* <div> */}
                     <div className="break">
                         <div className="leftside">
                             <div className="welcome">Welcome to Yazan929</div>
@@ -21,7 +21,7 @@ class Break extends React.Component {
                         </div>
 
                         <img src="photos/breakShoe.png" alt="new" />
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
             <ShoeList />
