@@ -8,8 +8,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background-image: url("http://localhost:3000/photos/banner.png");
-    /* background-image: url("http://ec2-54-179-117-71.ap-southeast-1.compute.amazonaws.com:3000/photos/banner.png"); */
+    /* background-image: url("http://localhost:3000/photos/banner.png"); */
+    background-image: url("http://ec2-54-179-117-71.ap-southeast-1.compute.amazonaws.com:3000/photos/banner.png");
 
     
     background-repeat: no-repeat;
