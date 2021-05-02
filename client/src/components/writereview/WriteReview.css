@@ -8,30 +8,41 @@
     /* justify-content: center; */
     align-items: center;
     font-size: 21px;
-
 }
 
 .Border{
     border: 3px solid #7db46cff;
-
 }
 
 .InsideForm{
-
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-
 }
 
 .Input{
     width: 89%;
     padding: 2px 2px;
     margin: 8px 0;
-    font-size: 20px;
-    
+    font-size: 20px;    
+    size: 5;
 }
+
+.Input  option {
+
+    /* font-size: 10px; */
+    height: 150px;
+    /* background-color: green; */
+    /* size: 5; */
+}
+
+.Input :first-child {
+
+    size: 5;
+}
+
+
 
 
 .Review{
@@ -77,6 +88,7 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    
 
 }
 .Submit:hover{
@@ -90,3 +102,12 @@
     max-height: 60px;
     overflow-y: scroll;
 }
+
+#test select{
+    display: none;
+}
+
+/* .Option{
+    height: 3px;
+    background-color: red;
+} */
