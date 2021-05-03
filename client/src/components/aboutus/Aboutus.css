@@ -27,3 +27,27 @@
     font-size: 20px;
     text-align: justify;
 }
+
+.Projects{
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Projects>a{
+    color: black;
+}
+
+.ListOfReviews{
+    padding-left: 200px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+
+
+.revStyle{
+    font-size: 30px;
+    padding-right: 80px;
+}

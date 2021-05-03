@@ -2,6 +2,7 @@ import React from "react";
 import "./WriteReview.css";
 import SelectShoe from "./selectShoe/SelectShoe.js";
 import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
 
 class writeReview extends React.Component {
     constructor(props) {
@@ -15,6 +16,11 @@ class writeReview extends React.Component {
         this.checkInfo = this.checkInfo.bind(this);
         this.axiosTest = this.axiosTest.bind(this);
 
+        this.state = {
+            id: 0
+        }
+
+
         // this.state = {
         //     id: 0,
         // };
@@ -24,43 +30,64 @@ class writeReview extends React.Component {
     //     return response.data.length
 
     // }
-
     async axiosTest() {
-        const response = await axios.get("http://localhost:6039/all_reviews")
-        console.log(response.data)
-        return response.data
-    } // didn't work
+        const { data: test }  = await axios.get("http://localhost:6039/all_reviews"),
+                  id = test.filter(test => test.id).length;
 
+        this.setState({ id});
+        console.log("the id is = " + id)
+    }
 
+    
+    // async axiosTest() {
+    //     const response = await axios.get("http://localhost:6039/all_reviews");
+    //     console.log(response.data);
+    //     return response.data;
+    // }
+    // didn't work
 
     setReviewsLength() {
         axios
             .get("http://localhost:6039/all_reviews")
             .then(function (response) {
-                console.log(response.data);
+                console.log(response.data.length);
+                const longeur = response.data.length;
+                console.log(longeur);
                 return response.data.length;
-            });
+            })
+            .catch((err) => console.error(err)); // promise
     } // didn't work
 
-
-    checkInfo(){
-        if( (this.inputRef.current.value==="") || (this.emailRef.current.value==="") ||(this.nameRef.current.value==="") ){
+    checkInfo() {
+        // var letters = /^[A-Za-z]+$/;
+        let mail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (
+            this.inputRef.current.value === "" ||
+            this.emailRef.current.value === "" ||
+            this.nameRef.current.value === ""
+        ) {
             alert("Please fill up everything");
-        }else (this.sendInfo())
+            // }else if(this.nameRef.current.value.includes("yazan")){
+            // }else if(this.nameRef.current.value.match(letters)){
+        } else if (!/^[a-zA-Z]+$/.test(this.nameRef.current.value)) {
+            alert("Please enter a name without symbols or numbers ");
+        } else if (!mail.test(this.emailRef.current.value)) {
+            alert("Please enter a real email ");
+        } else {
+            this.sendInfo();
+        }
     }
 
-
     sendInfo() {
+        let num = this.axiosTest();
+        console.log("num is " + num);
         const review = {
-            //id: setReviwsLength(),
-            //didn't work ^^
-            id: 0,
+            id: num,
             text: this.inputRef.current.value,
             email: this.emailRef.current.value,
             name: this.nameRef.current.value,
             shoeName: "shoe1",
-            stars: 5
-
+            stars: 5,
         };
 
         axios
@@ -71,7 +98,7 @@ class writeReview extends React.Component {
                 }
             });
 
-        console.log(this.axiosTest());
+        // console.log(this.axiosTest());
     }
 
     render() {
@@ -86,13 +113,21 @@ class writeReview extends React.Component {
                             <div>
                                 <div className="Element">Name</div>
 
-                                <input ref={this.nameRef} type="text" className="Input"></input>
+                                <input
+                                    ref={this.nameRef}
+                                    type="text"
+                                    className="Input"
+                                ></input>
                             </div>
 
                             <div>
                                 <div className="Element">Email</div>
 
-                                <input ref={this.emailRef} type="text" className="Input"></input>
+                                <input
+                                    ref={this.emailRef}
+                                    type="text"
+                                    className="Input"
+                                ></input>
                             </div>
                             <div className="Element">Select Shoe</div>
                             <div>
@@ -117,7 +152,6 @@ class writeReview extends React.Component {
                                 >
                                     Submit
                                 </button>
-
                             </div>
                         </div>
                     </div>
